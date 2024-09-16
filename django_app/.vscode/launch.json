@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "GovChat",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "daphne",
+            "args": [
+                "GovChat_app.asgi:application",
+                "--port", "8080"
+            ],
+            "django": true,
+            "envFile": "${workspaceFolder}/../.env",
+            "env": {
+                "MINIO_HOST": "localhost",
+                "POSTGRES_HOST": "localhost",
+                "UNSTRUCTURED_HOST": "localhost"
+            }
+        },
+    ]
+}
