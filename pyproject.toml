@@ -40,7 +40,7 @@ yarl = "^1.9.4"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.5.3"
-mkdocstrings = {extras = ["python"], version = "^0.25.2"}
+mkdocstrings = {extras = ["python"], version = ">=0.25.2,<1.1.0"}
 mkdocs-material = "^9.5.31"
 mkdocs-mermaid2-plugin = "^1.1.1"
 markdown-mdantic = "^2.1.0"
